@@ -31,6 +31,7 @@ export class AuthService {
         return userdata;
       }
     } catch (error) {
+      console.log(conf.appwriteProjectId);
       console.log("Appwrite :: AuthService :: createAccount :: errors ", error);
     }
   }
